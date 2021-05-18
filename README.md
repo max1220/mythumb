@@ -3,22 +3,30 @@
 This is a set of simple BASH scripts for interactively configuring the
 USB gadget mode for mass storage.
 
-For a proper application see: https://git.sr.ht/~martijnbraam/thumbdrives
+*For a proper application see: https://git.sr.ht/~martijnbraam/thumbdrives*
 
-There are two version:
+
+
+# Usage
 
 * The `dialog.sh` script uses dialog for interactive usage,
-
 * The `zenity.sh` script uses zenity for graphical usage.
 
-You can also use the gadget function directly:
+Both scripts have a menu-based navigation.
+In the main menu you can select an action to take:
+ * mount an image
+ * create an image
+ * unmount image
+
+You can also use the functions directly:
 ```
 source gadget_actions.sh
 mount_mass_storage /path/to/img
-mount_cdrom
+mount_cdrom /path/to/img
 unmount
 ```
 It also defines some other functions.
+
 
 
 # Credit
